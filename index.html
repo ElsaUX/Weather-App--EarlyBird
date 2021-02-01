@@ -2,12 +2,84 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
-    <meta name="viewport" content="width=, initial-scale=1.0" />
-    <title>Document</title>
-    <link rel="stylesheet" href="style.css" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="src/styles.css" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1"
+      crossorigin="anonymous"
+    />
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Cabin&display=swap"
+      rel="stylesheet"
+    />
+    <title>EarlyBird Weather App</title>
   </head>
   <body>
-    <h1>Hello git!</h1>
-    <script src="script.js"></script>
+    <div class="container">
+      <div class="weather-app">
+        <form class="search-box" id="search-form">
+          <div class="row">
+            <div class="col-6">
+              <input
+                type="search"
+                placeholder="Search for a city..."
+                autofocus="on"
+                autocomplete="off"
+                class="form-control"
+                id="search-text-input"
+              />
+            </div>
+            <div class="col-3">
+              <input
+                type="submit"
+                value="Search"
+                class="form-control btn btn-light shadow-sm"
+              />
+            </div>
+            <div class="col-3">
+              <button
+                type="button"
+                class="btn btn-info shadow-sm form-control"
+                id="current-location-button"
+              >
+                Current
+              </button>
+            </div>
+          </div>
+        </form>
+
+        <h1 id="city"></h1>
+        <ul class="list">
+          <li id="date"></li>
+          <li id="description"></li>
+          <div class="row">
+            <div class="col-6">
+              <img
+                src="https://www.creativefabrica.com/wp-content/uploads/2018/12/Nature-Icon-by-Zafreeloicon-161-312x208.jpg"
+                alt="Partly Sunny icon"
+                class="weather-icon"
+              />
+
+              <span class="temperature" id="temperature"> </span>
+              <span class="units">
+                <a href="#" id="celsius-link"> ºC </a> |
+                <a href="#" id="fahrenheit-link"> ºF </a>
+              </span>
+            </div>
+            <div class="col-6">
+              <span class="elements">
+                <li>Humidity: <span id="humidity"> </span> %</li>
+                <li>Wind: <span id="wind"> </span> km/h</li>
+              </span>
+            </div>
+          </div>
+        </ul>
+      </div>
+    </div>
   </body>
+  <script src="src/index.js"></script>
 </html>
