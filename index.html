@@ -16,7 +16,7 @@
       href="https://fonts.googleapis.com/css2?family=Cabin&display=swap"
       rel="stylesheet"
     />
-    <title>EarlyBird Weather App</title>
+    <title>EarlyBird 🐥 Weather App ☀️ </title>
   </head>
   <body>
     <div class="container">
@@ -52,43 +52,41 @@
           </div>
         </form>
 
+        <p class="intro">Today is <span id="date"> </span>
+        </p>
         <h1 id="city"></h1>
         <ul class="list">
           <li id="date"></li>
           <li id="description"></li>
           <div class="row">
-            <div class="col-6">
-              <img
-                src="https://www.creativefabrica.com/wp-content/uploads/2018/12/Nature-Icon-by-Zafreeloicon-161-312x208.jpg"
-                alt="Partly Sunny icon"
-                class="weather-icon"
-              />
-
               <span class="temperature" id="temperature"> </span>
               <span class="units">
                 <a href="#" id="celsius-link"> ºC </a> |
                 <a href="#" id="fahrenheit-link"> ºF </a>
               </span>
-            </div>
-            <div class="col-6">
               <span class="elements">
-                <li>Humidity: <span id="humidity"> </span> %</li>
-                <li>Wind: <span id="wind"> </span> km/h</li>
+                 <img
+                src="https://www.creativefabrica.com/wp-content/uploads/2018/12/Nature-Icon-by-Zafreeloicon-161-312x208.jpg"
+                alt="Partly Sunny icon"
+                class="weather-icon"
+              />
+              <li>Feels like: <span id="feels like"> </span> </li>  
+              <li>Humidity: <span id="humidity"> </span> %</li>
+              <li>Wind: <span id="wind"> </span> km/h</li>
               </span>
-            </div>
           </div>
         </ul>
       </div>
     </div>
-    <span class="link-to-code">
-      <a
-        href="https://github.com/ElsaUX/Weather-App--EarlyBird"
-        target="_blank"
-      >
-        Open-source code
-      </a>
-      by Elsa Silva
-    </span>
+    <div class="row previsions" id="forecast">
+            </div>
+            <footer>
+                <p class="link-to-code">
+                  <a href="https://github.com/ElsaUX/Weather-App--EarlyBird"
+                  target="_blank"> Open-source code </a> by <a href= "#"> Elsa Silva </a> 🐥
+                </p>
+            </footer>
+        </div>
   </body>
   <script src="src/script.js"></script>
 </html>

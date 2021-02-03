@@ -1,10 +1,15 @@
+body {
+  text-align: center;
+}
 h1 {
   color: #b47cf9;
   display: block;
+  margin: 0 auto;
   font-size: 24px;
   font-family: "Cabin", sans-serif;
   font-weight: 700;
   line-height: 28px;
+  text-align: center;
 }
 ul {
   margin: 0;
@@ -22,6 +27,14 @@ li {
   padding-left: -2rem;
   padding-inline-start: 0;
 }
+.intro {
+  color: rgb(135, 135, 135);
+  font-size: 18px;
+  font-weight: 100;
+  line-height: 28px;
+  list-style: none;
+  padding-bottom: 30px;
+}
 .weather-app {
   border: 1px solid #b2ebe9;
   padding: 35px;
@@ -32,12 +45,8 @@ li {
 .link-to-code {
   padding: 100px;
 }
-.list {
-  padding: 0;
-  margin-bottom: 50px;
-}
+
 .elements {
-  text-align: right;
   font-weight: 50;
 }
 .temperature {
@@ -45,17 +54,25 @@ li {
   font-size: 64px;
   font-weight: 400;
 }
+.units {
+  position: relative;
+  top: -80px;
+  left: 60px;
+}
 .weather-icon {
+  display: inline;
   height: 104px;
   width: 124px;
-  margin-left: -20px;
   position: relative;
   top: -15px;
 }
-.units {
-  position: relative;
-  top: -32px;
-}
+
 .search-box {
   margin-bottom: 25px;
+}
+footer {
+  text-align: center;
+  margin: 20px;
+  font-weight: lighter;
+  color: rgb(135, 135, 135);
 }
