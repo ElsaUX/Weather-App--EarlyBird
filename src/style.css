@@ -40,19 +40,18 @@ li {
   padding-bottom: 30px;
 }
 .weather-app {
-  background-color: #b17395;
+  background-color: rgba(255, 255, 255, 0.242);
   opacity: 30px;
-  padding: 35px;
-  margin: 20px auto;
+  text-align: center;
+  padding: 25px;
+  margin: 0 auto;
+  margin-top: 80px;
   border-radius: 10px;
   max-width: 700px;
 }
-.link-to-code {
-  padding: 100px;
-}
-
 .elements {
   font-weight: 50;
+  margin-bottom: 20px;
 }
 .temperature {
   color: rgb(247, 226, 226);
@@ -71,12 +70,35 @@ li {
   position: relative;
   top: -15px;
 }
-
 .search-box {
   margin-bottom: 25px;
 }
-footer {
+.weather-forecast {
+  margin-left: 0;
+  margin-right: 0;
+  margin-top: 50px;
+  padding-left: 40px;
+}
+.weather-forecast img {
+  display: in-line;
+  margin: 0 auto;
+  height: 48px;
+  width: 48px;
+}
+.forecast-temperature {
   text-align: center;
-  margin: 20px;
-  font-weight: lighter;
+  color: rgb(247, 226, 226);
+  font-size: 15px;
+  height: auto;
+  line-height: 15px;
+  white-space: nowrap;
+}
+.link-to-code {
+  padding: 10px;
+}
+.photo-reference {
+  color: rgb(247, 226, 226);
+  margin: 0 auto;
+  padding-top: 135px;
+  padding-bottom: 25px;
 }

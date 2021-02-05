@@ -27,9 +27,8 @@ dateElement.innerHTML = formatDate(currentTime);
 
 function displayWeather(response) {
   document.querySelector("#city").innerHTML = response.data.name;
-  document.querySelector("#temperature").innerHTML = Math.round(
-    response.data.main.temp
-  );
+  document.querySelector("#temperature").innerHTML = Math.round(response.data.main.temp);
+  document.querySelector("#feels-like").innerHTML = Math.round(response.data.main.feels_like);
   document.querySelector("#humidity").innerHTML = response.data.main.humidity;
   document.querySelector("#wind").innerHTML = Math.round(
     response.data.wind.speed
@@ -69,3 +68,15 @@ let currentLocationButton = document.querySelector("#current-location-button");
 currentLocationButton.addEventListener("click", getCurrentLocation);
 
 searchCity("New York");
+
+function displayForecast(response) {
+    let forecastElement = document.querySelector("#forecast");
+    forecastElement.innerHTML = null;
+    let forecast = null;
+    for (let index = 0; index < 3; index++) {
+        forecast = response.data.list[index];
+        let timezone = response.data.city.timezone;
+        forecastElement.innerHTML += `
+     
+    }
+}
