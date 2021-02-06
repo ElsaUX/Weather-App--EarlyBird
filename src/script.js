@@ -37,11 +37,30 @@ function displayWeather(response) {
     response.data.weather[0].main;
 }
 
+function displayForecast (response) {
+  let forecastElement = document.querySelector("#forecast");
+  let forecast = response.data.list[0];
+  console.log(forecast);
+
+  forecastElement.innerHTML=`
+    <div class="col-2">
+      <h4>
+        12:00
+      </h4>
+      <img src= "http://openweathermap.org/img/wn/${forecast.weather[0].icon}@2x.png" alt=""/>
+      <div class="forecast-temperature"> 
+      <strong>${Math.round(forecast.main.temp_max)}°</strong> ${Math.round(forecast.main.temp_min)}°</div>
+    </div>`;
+}
+
 function searchCity(city) {
   let apiKey = "7b88d25844513947d51c5d4948014282";
   let units = "metric";
   let apiUrl = `https://api.openweathermap.org/data/2.5/weather?q=${city}&appid=${apiKey}&units=${units}`;
   axios.get(apiUrl).then(displayWeather);
+
+  apiUrl=`https://api.openweathermap.org/data/2.5/forecast?q=${city}&appid=${apiKey}&units=${units}`;
+  axios.get(apiUrl).then(displayForecast);
 }
 
 function handleSubmit(event) {
@@ -68,15 +87,3 @@ let currentLocationButton = document.querySelector("#current-location-button");
 currentLocationButton.addEventListener("click", getCurrentLocation);
 
 searchCity("New York");
-
-function displayForecast(response) {
-    let forecastElement = document.querySelector("#forecast");
-    forecastElement.innerHTML = null;
-    let forecast = null;
-    for (let index = 0; index < 3; index++) {
-        forecast = response.data.list[index];
-        let timezone = response.data.city.timezone;
-        forecastElement.innerHTML += `
-     
-    }
-}
