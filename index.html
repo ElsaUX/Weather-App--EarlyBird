@@ -23,7 +23,7 @@
       <div class="weather-app">
         <form class="search-box" id="search-form">
           <div class="row">
-            <div class="col-6">
+            <div class="col-7">
               <input
                 type="search"
                 placeholder="Search for a city..."
@@ -40,20 +40,12 @@
                 class="form-control btn btn-light shadow-sm"
               />
             </div>
-            <div class="col-3">
-              <button
-                type="button"
-                class="btn btn-info shadow-sm form-control"
-                id="current-location-button"
-              >
-                Current
-              </button>
+            <div class="col-2">
+              <button type="button" class="btn btn-outline-light shadow-sm form-control locationButton button-image">
             </div>
           </div>
         </form>
-
-        <p class="intro">Today is <span id="date"> </span>
-        </p>
+        <p class="intro">Today is <span id="date"> </span></p>
         <h1 id="city"></h1>
         <ul class="list">
           <li id="date"></li>
@@ -65,18 +57,15 @@
                 <a href="#" id="fahrenheit-link"> ºF </a>
               </span>
               <span class="elements">
-                 <img
-                src="https://www.creativefabrica.com/wp-content/uploads/2018/12/Nature-Icon-by-Zafreeloicon-161-312x208.jpg"
-                alt="Partly Sunny icon"
-                class="weather-icon"
-              />
+                 <img src="" class="weather-icon"/>
               <li>Feels like: <span id="feels-like"> </span> </li>  
               <li>Humidity: <span id="humidity"> </span> %</li>
               <li>Wind: <span id="wind"> </span> km/h</li>
               </span>
           </div>
               <div class="row weather-forecast" id="forecast"></div>
-        </div>
+       </div>       
+      </div>
                 <p class="link-to-code">
                   <a href="https://github.com/ElsaUX/Weather-App--EarlyBird"
                   target="_blank"> Open-source code </a> by <a href= "#"> Elsa Silva </a> 🐥

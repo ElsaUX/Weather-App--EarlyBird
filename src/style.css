@@ -15,6 +15,20 @@ h1 {
   line-height: 28px;
   text-align: center;
 }
+.button-image:before {
+  content: "";
+  display: inline-block;
+  width: 25px;
+  height: 25px;
+  vertical-align: middle;
+  background-color: transparent;
+  background-position: center center;
+  background-repeat: no-repeat;
+  resize: none;
+}
+.locationButton:before {
+  background-image: url("https://static.thenounproject.com/png/205058-200.png");
+}
 ul {
   color: rgba(255, 255, 255, 0.886);
   margin: 0;
@@ -31,6 +45,7 @@ li {
   padding-left: -2rem;
   padding-inline-start: 0;
 }
+
 .intro {
   color: rgba(255, 255, 255, 0.886);
   font-size: 18px;
