@@ -32,17 +32,18 @@ let currentTime = new Date();
 dateElement.innerHTML = formatDate(currentTime);
 
 function displayWeather(response) {
-  let iconElement = document.querySelector("#icon");
   document.querySelector("#city").innerHTML = response.data.name;
   document.querySelector("#temperature").innerHTML = Math.round(response.data.main.temp);
   document.querySelector("#feels-like").innerHTML = Math.round(response.data.main.feels_like);
   document.querySelector("#humidity").innerHTML = response.data.main.humidity;
   document.querySelector("#wind").innerHTML = Math.round(response.data.wind.speed);
   document.querySelector("#description").innerHTML = response.data.weather[0].main;
-  
-  iconElement.setAttribute("src","http://openweathermap.org/img/wn/${response.data.weather[0].icon}@2x.png");
-  iconElement.setAttribute("alt", response.data.weather[0].description);
+  document.querySelector(".icon").setAttribute(
+      "src",
+      `http://openweathermap.org/img/wn/${response.data.weather[0].icon}@2x.png`
+    );
 }
+
 
 function displayForecast (response) {
   let forecastElement = document.querySelector("#forecast");
