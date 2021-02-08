@@ -51,7 +51,7 @@ function displayForecast (response) {
   let forecast = null;
   
   for (let index = 0; index < 4; index++) {
-    let forecast = response.data.list[index];
+    forecast = response.data.list[index];
     forecastElement.innerHTML= `
       <div class="col-2">
         <h4>
