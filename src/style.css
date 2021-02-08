@@ -48,7 +48,6 @@ li {
   padding-left: -2rem;
   padding-inline-start: 0;
 }
-
 .intro {
   color: rgba(255, 255, 255, 0.886);
   font-size: 18px;
@@ -68,6 +67,7 @@ li {
   max-width: 700px;
 }
 .elements {
+  color: antiquewhite;
   font-weight: 50;
   margin-bottom: 20px;
 }
@@ -75,6 +75,14 @@ li {
   color: rgb(247, 226, 226);
   font-size: 64px;
   font-weight: 400;
+}
+.temperature.description {
+  color: grey;
+  font-size: 28px;
+  font-weight: 100;
+  line-height: 28px;
+  list-style: none;
+  padding-bottom: 30px;
 }
 .units {
   position: relative;
