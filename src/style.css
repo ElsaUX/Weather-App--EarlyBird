@@ -15,6 +15,9 @@ h1 {
   line-height: 28px;
   text-align: center;
 }
+h4 {
+  color: rgb(144, 62, 95);
+}
 .button-image:before {
   content: "";
   display: inline-block;

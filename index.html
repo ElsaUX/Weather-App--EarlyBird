@@ -41,7 +41,8 @@
               />
             </div>
             <div class="col-2">
-              <button type="button" class="btn btn-outline-light shadow-sm form-control locationButton button-image">
+              <button type="button" class="btn btn-outline-light shadow-sm form-control locationButton button-image" 
+              id="location-button"></button>
             </div>
           </div>
         </form>
@@ -50,6 +51,7 @@
         <ul class="list">
           <li id="date"></li>
           <li id="description"></li>
+        </ul>
           <div class="row">
               <span class="temperature" id="temperature"> </span>
               <span class="units">
@@ -57,22 +59,20 @@
                 <a href="#" id="fahrenheit-link"> ºF </a>
               </span>
               <span class="elements">
-                 <img src="" class="weather-icon"/>
-              <li>Feels like: <span id="feels-like"> </span> </li>  
-              <li>Humidity: <span id="humidity"> </span> %</li>
-              <li>Wind: <span id="wind"> </span> km/h</li>
+                 <img src="" class="icon"/>
+                <li>Feels like: <span id="feels-like"> </span> </li>  
+                <li>Humidity: <span id="humidity"> </span> %</li>
+                <li>Wind: <span id="wind"> </span> km/h</li>
               </span>
           </div>
-              <div class="row weather-forecast" id="forecast"></div>
-       </div>       
+        <div class="row weather-forecast" id="forecast"></div>
       </div>
-                <p class="link-to-code">
-                  <a href="https://github.com/ElsaUX/Weather-App--EarlyBird"
-                  target="_blank"> Open-source code </a> by <a href= "#"> Elsa Silva </a> 🐥
-                </p>
-                <footer class="photo-reference">
-                  <span>Photo by <a href="https://unsplash.com/@leonagle?utm_source=unsplash&amp;utm_medium=referral&amp;utm_content=creditCopyText">Leo Nagle</a> on <a href="https://unsplash.com/s/photos/wallpaper-desktop-oleg-chursin-mountain?utm_source=unsplash&amp;utm_medium=referral&amp;utm_content=creditCopyText">Unsplash</a></span>
-                </footer>
+      <p class="link-to-code">
+        <a href="https://github.com/ElsaUX/Weather-App--EarlyBird"
+        target="_blank"> Open-source code </a> by <a href= "#"> Elsa Silva </a> 🐥 </p>
+      <footer class="photo-reference">
+        <span>Photo by <a href="https://unsplash.com/@leonagle?utm_source=unsplash&amp;utm_medium=referral&amp;utm_content=creditCopyText">Leo Nagle</a> on <a href="https://unsplash.com/s/photos/wallpaper-desktop-oleg-chursin-mountain?utm_source=unsplash&amp;utm_medium=referral&amp;utm_content=creditCopyText">Unsplash</a></span>
+      </footer>
   </body>
   <script src="src/script.js"></script>
 </html>
