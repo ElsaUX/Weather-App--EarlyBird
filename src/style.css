@@ -27,7 +27,6 @@ ul {
 li {
   display: block;
   font-size: 18px;
-  font-weight: 100;
   line-height: 28px;
   list-style: none;
   padding-left: -2rem;
@@ -37,7 +36,7 @@ li {
   background-color: rgba(255, 255, 255, 0.242);
   opacity: 30px;
   padding: 25px;
-  margin: 150px auto;
+  margin: auto;
   margin-top: 80px;
   border-radius: 10px;
   max-width: 700px;
@@ -59,14 +58,15 @@ li {
 .intro {
   color: rgba(255, 255, 255, 0.886);
   font-size: 18px;
-  font-weight: bold;
+  font-weight: 500;
   line-height: 28px;
   list-style: none;
-  padding-bottom: 30px;
+  padding-bottom: 15px;
 }
 .elements {
-  color: antiquewhite;
+  color: rgba(82, 56, 56, 0.975);
   margin-bottom: 20px;
+  font: bold;
 }
 .temperature {
   color: rgb(247, 226, 226);
@@ -95,6 +95,9 @@ li {
 }
 .search-box {
   margin-bottom: 25px;
+}
+.weather-forecast {
+  padding-top: 15px;
 }
 .weather-forecast img {
   width: 70px;
