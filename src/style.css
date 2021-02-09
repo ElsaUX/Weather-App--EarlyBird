@@ -13,24 +13,9 @@ h1 {
   font-family: "Cabin", sans-serif;
   font-weight: 700;
   line-height: 28px;
-  text-align: center;
 }
 h4 {
   color: rgb(144, 62, 95);
-}
-.button-image:before {
-  content: "";
-  display: inline-block;
-  width: 25px;
-  height: 25px;
-  vertical-align: middle;
-  background-color: transparent;
-  background-position: center center;
-  background-repeat: no-repeat;
-  resize: none;
-}
-.locationButton:before {
-  background-image: url("https://static.thenounproject.com/png/205058-200.png");
 }
 ul {
   color: rgba(255, 255, 255, 0.886);
@@ -48,29 +33,40 @@ li {
   padding-left: -2rem;
   padding-inline-start: 0;
 }
-.intro {
-  color: rgba(255, 255, 255, 0.886);
-  font-size: 18px;
-  font-weight: 100;
-  line-height: 28px;
-  list-style: none;
-  padding-bottom: 30px;
-}
 .weather-app {
   background-color: rgba(255, 255, 255, 0.242);
   opacity: 30px;
-  text-align: center;
   padding: 25px;
-  margin: 0 auto;
+  margin: 150px auto;
   margin-top: 80px;
   border-radius: 10px;
   max-width: 700px;
 }
+.button-image:before {
+  content: "";
+  display: inline-block;
+  width: 25px;
+  height: 25px;
+  vertical-align: middle;
+  background-color: transparent;
+  background-position: center center;
+  background-repeat: no-repeat;
+  resize: none;
+}
+.locationButton:before {
+  background-image: url("https://static.thenounproject.com/png/205058-200.png");
+}
+.intro {
+  color: rgba(255, 255, 255, 0.886);
+  font-size: 18px;
+  font-weight: bold;
+  line-height: 28px;
+  list-style: none;
+  padding-bottom: 30px;
+}
 .elements {
   color: antiquewhite;
-  font-weight: 50;
   margin-bottom: 20px;
-  font-weight: 200;
 }
 .temperature {
   color: rgb(247, 226, 226);
@@ -101,16 +97,10 @@ li {
   margin-bottom: 25px;
 }
 .weather-forecast {
-  margin-left: 0;
-  margin-right: 0;
-  margin-top: 50px;
-  padding-left: 40px;
+  color: blue;
 }
 .weather-forecast img {
-  display: in-line;
-  margin: 0 auto;
-  height: 48px;
-  width: 48px;
+  width: 70px;
 }
 .forecast-temperature {
   text-align: center;
