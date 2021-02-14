@@ -68,12 +68,20 @@ li {
   margin-bottom: 20px;
   font: bold;
 }
+.units .active {
+  color: rgb(247, 226, 226);
+  cursor: default;
+  text-decoration: none;
+}
+.units .active :hover {
+  text-decoration: none;
+}
 .temperature {
   color: rgb(247, 226, 226);
   font-size: 64px;
   font-weight: 400;
 }
-.temperature.description {
+.temperature .description {
   color: grey;
   font-size: 28px;
   font-weight: 100;
