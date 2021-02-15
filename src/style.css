@@ -41,19 +41,16 @@ li {
   border-radius: 10px;
   max-width: 700px;
 }
-.button-image:before {
+.button-image {
   content: "";
   display: inline-block;
-  width: 25px;
-  height: 25px;
+  width: 24.5px;
+  height: 24.5px;
   vertical-align: middle;
   background-color: transparent;
   background-position: center center;
   background-repeat: no-repeat;
   resize: none;
-}
-.locationButton:before {
-  background-image: url("https://static.thenounproject.com/png/205058-200.png");
 }
 .intro {
   color: rgba(255, 255, 255, 0.886);
